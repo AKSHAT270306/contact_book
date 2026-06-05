@@ -27,7 +27,7 @@ def view_all():                             #to view contact
             c.display()
             print("######################")
 
-def search_contact(name):
+def search_contact(name):                #search a contact
     n=name.lower()
     if len(contacts)==0:
         print("no contacts")
@@ -39,7 +39,7 @@ def search_contact(name):
         else:
             print("contact not found")
 
-def find(n):
+def find(n):                                #find a contact
         if len(contacts)==0:
             return None
         else:
@@ -50,7 +50,7 @@ def find(n):
             else:
                 return None
 
-def delete_contact(name):
+def delete_contact(name):                   #delete a contact
     n=name.lower() 
     ans=find(n)
     if ans== None:
